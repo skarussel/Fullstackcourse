@@ -1,0 +1,9 @@
+title 0.6: SPA Add note 
+
+
+note over browser
+Create Note, add note to note list and rerender note list
+end note 
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: Status 201: Created

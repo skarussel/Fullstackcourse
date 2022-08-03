@@ -1,6 +1,10 @@
 title 0.4: New note
 
 browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note with text as payload
+note over server:
+server create note from payload 
+and add note to note list
+end note
 server-->browser: Code 302: asks Browser to redirect to https://studies.cs.helsinki.fi/exampleapp/notes
 browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
 server-->browser: HTML-code
