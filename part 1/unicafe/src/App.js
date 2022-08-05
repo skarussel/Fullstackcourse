@@ -17,9 +17,7 @@ const Statistics = (props) => {
       <StatisticLine text ="all" value = {sum(props.values)} />
       <StatisticLine text ="average" value = {avg(props.values)} />
   </table>
-
   )
-  
 
 }
 
