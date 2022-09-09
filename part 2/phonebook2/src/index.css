@@ -1,0 +1,25 @@
+.notification{
+    font:bold;
+    color: green;
+    font-size: 20px;
+    border-style:solid;
+    border-width:2px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: lightgray;
+
+}
+
+.error{
+    font:bold;
+    color: red;
+    font-size: 20px;
+    border-style:solid;
+    border-width:2px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: lightgray;
+
+}
