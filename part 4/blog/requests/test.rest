@@ -1,0 +1,8 @@
+POST http://localhost:3003/api/blogs 
+Content-Type: application/json
+
+{"title": "Living the good life",
+  "author": "Nietzsche",
+  "url": "www.nietzsche.de",
+  "likes": 42
+}
