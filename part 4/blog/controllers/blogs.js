@@ -40,8 +40,7 @@ blogRouter.delete('/:id', userExtractor, async (request, response) => {
 
   const blog = await Blog.findById(request.params.id)
   const user = request.user
-  console.log(blog)
-  console.log(user)
+
   if (user.id.toString() === blog.author.toString()){
     blog.delete()
     response.status(204).end()
@@ -58,7 +57,7 @@ blogRouter.put('/:id', async (request, response) => {
 
   const newEntry = {
     title: body.title,
-    author: body.author,
+    author: body.author.id,
     url: body.url,
     likes: body.likes
   }
